@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+    <title>Products</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: darkgrey;
+            padding: 40px 0px;
+        }
+
+        .box {
+            border: 2px solid brown;
+            border-radius: 30px;
+            background-color: #e4c0ad;
+            margin: 30px 60px;
+            padding: 20px 40px;
+            width: 370px;
+            height: 560px;
+            text-align: center;
+        }
+
+        .box .img1 {
+            width: 280px;
+            height: 180px;
+        }
+
+        .box h2 {
+            font-family: 'Convergence', sans-serif;
+            padding: 10px 0px;
+            font-size: 1.8rem;
+        }
+
+        .box p {
+            padding-top: 5px;
+            font-size: 1.1rem;
+        }
+
+        .btn2 {
+            padding: 8px 15px;
+            position: relative;
+            top: 40px;
+            border-radius: 20px;
+            border: 2px solid firebrick;
+            background-color: #ef6e6e;
+            color: cornsilk;
+        }
+
+        .btn2:hover{
+            cursor: pointer;
+            background-color: crimson;
+            color: antiquewhite;
+        }
+
+        .heading {
+            width: 800px;
+            margin: auto;
+        }
+
+        .heading h1 {
+            font-family: 'Convergence', sans-serif;
+            color: navy;
+            padding: 25px 20px;
+            font-size: 2rem;
+        }
+
+        .heading p {
+            font-family: 'Convergence', sans-serif;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+        }
+        .btn1 {
+            margin: 30px 20px;
+            padding: 10px 25px;
+            border-radius: 25px;
+            background-color: cadetblue;
+            border: 2px solid black;
+            color: azure;
+        }
+        .btn1:hover{
+            cursor: pointer;
+            background-color: darkcyan;
+            color: bisque;
+        }
+        .heading::before {
+            content: "";
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCfhHfcxEMejxgY6Gh1n2x3Z5xUvatBf3bXw&usqp=CAU') center center/cover;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 300px;
+            width: 100%;
+            z-index: -7;
+            opacity: 0.8;
+        }
+
+        @media only screen and (max-width:736px) {
+            .heading {
+                width: 400px;
+            }
+
+            .heading h1 {
+                padding: 15px 10px;
+                font-size: 1.5rem;
+            }
+
+            .heading p {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+
+        @media only screen and (max-width:375px) {
+            .heading {
+                width: 300px;
+            }
+
+            .heading h1 {
+                padding: 10px 6px;
+                font-size: 1.2rem;
+            }
+
+            .heading p {
+                padding: 8px 15px;
+                font-size: 1rem;
+            }
+
+            .box {
+                margin: 15px 15px;
+                padding: 20px 15px;
+                width: 260px;
+                height: 580px;
+                text-align: center;
+            }
+            .box .img1 {
+                width: 220px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="heading">
+        <h1>MODER FURNITURE FOR ALL AT ONE PLACE</h1>
+        <p>We have 300k+ purchases and<br>
+            100k+ customer reviews</p>
+        <button class="btn1">Buy Now</button>
+    </section>
+    <section class="items" id="products">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1EdBuYvWjTiyc-otF3YXbmS_2Tt5XAa7zcA&usqp=CAU"
+                alt="" class="img1">
+            <h2>Stylish Hall</h2>
+            <p class="info">
+                Make your hall modern and royal with our new Sofa designs, Latest TV tabels, new Console tabels,
+                relaxing sofa chairs and normal chairs. We also have some combo offers if you make bulk purchase.
+            </p>
+            <button class="btn2">Shop Now</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTahd3CKuismmMs775MDqKqLcOmfw5JE6v6g&usqp=CAU"
+                alt="" class="img1">
+            <h2>Luxurious Bedroom</h2>
+            <p class="info">
+                You can have a peaceful sleep by making your Bedroom Luxurious with our new king size bed designs,
+                customizable Wardrobes made as per your request, variety of dressing tabels and study tabel with
+                comfortable chair designs. Get this all in one place at fair price.
+            </p>
+            <button class="btn2">Shop Now</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3P1VsUblDHb0RBq1213Vgx48PmjDEJ49nhA&usqp=CAU"
+                alt="" class="img1">
+            <h2>Modular Kitchen</h2>
+            <p class="info">
+                Reduce the effort of managing kitchen utensils by changing your kitchen design with our modular kitchen
+                designs. We make modular kitchen designs as per your kitchen size with multiple kitchen trolley sizes
+                and different kitchen cupboard arrangements which suits your kitchen.
+            </p>
+            <button class="btn2">Shop Now</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2rmG_auNVkuLl0XxGtdCzsYH7S1a4r9Ub9g&usqp=CAU"
+                alt="" class="img1">
+            <h2>Dining Area</h2>
+            <p class="info">
+                A well decorated dining room is essential to maintain the health and hygiene of the family. We make
+                tabels and chairs of suitable sizes that help you maintain an elegant space and entertain the guests on
+                special occasions. We also make cupboards and dining room dressers to store your crockery and cutlery.
+            </p>
+            <button class="btn2">Shop Now</button>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDPB6eFaLYEACpIBWCA-t6rbU5TzsoK8e7AQ&usqp=CAU"
+                alt="" class="img1">
+            <h2>Modern Doors</h2>
+            <p class="info">
+                Enhance the entrance to your premises with our quality range of commercial entrance doors and safety
+                doors.
+                These secure and attractive door sets are designed for social housing blocks and apartments where
+                impressive aesthetics are required alongside durability, convenience and
+                high security.
+            </p>
+            <button class="btn2">Shop Now</button>
+        </div>
+    </section>
+</body>
+
+</html>
